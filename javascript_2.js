@@ -30,3 +30,11 @@ function reverseStringThree(str) {
   return revString;
 }
 reverseStringThree('Careful, Spongebob');
+
+// first, create a new var which contains an empty string
+// create a for loop, using str.length - 1 since it will correspond
+// to the last letter in the string.
+// Loop as long as i is greater than or equal to 0, and 
+// decrement after each iteration. 
+// last, add the newString var to it's self and to the index value
+// of the array 'str' and return revString
