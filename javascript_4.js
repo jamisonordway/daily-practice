@@ -39,4 +39,4 @@ console.log(outputTwo);
 // maxChar is the character with most occurences and maxNum is the quantity.
 // These two variables will change, so use 'let'!
 
-// HEY! Return to this and account for words that have more than one 'max number'.
+// HEY! Return to this and account for words that have more than one 'max char'.
