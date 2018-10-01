@@ -17,5 +17,5 @@ function isPalindrome(str) {
 // if it is the same as str (the original passed in value)
 // Make sure to account for capitalization!
 
-isPalindrome('racecar');
-isPalindrome('sup');
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('sup'));
