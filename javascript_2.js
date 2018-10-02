@@ -1,6 +1,10 @@
 // reverse a string!
 
+function reverseStringFour(str) {
+  return str.split('').reverse().join('');
+}
 
+console.log(reverseStringFour('que paso'));
 // we could create a new variable and set it to the string that's passed in with split()
 // split() turns a string into an array and takes in a param of a separator
 // we want each character to be put into its own array value, so we'll set the param to ''.
