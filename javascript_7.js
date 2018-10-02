@@ -15,3 +15,17 @@ function greatestCommon(num1, num2) {
 
 console.log(greatestCommon(12, 13));
 console.log(greatestCommon(9, 3));
+
+
+function greatestCommonDenom(x, y) {
+  x = Math.abs(x);
+  y = Math.abs(y);
+  while(y) {
+    let t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
+
+console.log(greatestCommonDenom(40, 10));
