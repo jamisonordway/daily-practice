@@ -16,3 +16,13 @@ function fib(num) {
 }
 
 console.log(fib(4));
+
+// solve recursively!
+
+function fibonacci(num) {
+  if (num <= 1 ) return 1;
+  
+  return fibonacci(num-1) + fibonacci(num - 2);
+}
+
+console.log(fibonacci(5));
