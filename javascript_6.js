@@ -26,3 +26,14 @@ function fibonacci(num) {
 }
 
 console.log(fibonacci(5));
+
+function anotherFib(num, memo) {
+  memo = memo || {};
+
+  if (memo[num]) return memo[num];
+  if (num <= 1) return 1;
+
+  return memo[num] = anotherFib(num -1, memo) + anotherFib(num -2, memo);
+}
+
+console.log(anotherFib(50));
