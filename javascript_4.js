@@ -24,10 +24,11 @@ function maxCharacter(str) {
 }
 
 const output = maxCharacter('lollipop');
-const outputTwo = maxCharacter('badass');
+const outputTwo = maxCharacter('google');
 
 console.log(output);
 console.log(outputTwo);
+
 // first, create an object as a map. This creates an empty object.
 // then, split the string and loop through the resulting array with forEach()
 // there will be a key-value pair of each actual character and its quantity.
@@ -40,3 +41,28 @@ console.log(outputTwo);
 // These two variables will change, so use 'let'!
 
 // HEY! Return to this and account for words that have more than one 'max char'.
+
+
+function maxChar(str) {
+  let maxNumber = 0,
+      maximumChar;
+
+  str.split('').reduce((letters, letter) => {
+    if (!letters[letter]) {
+      letters[letter] = 0;
+    }
+    letters[letter]++;
+
+    if (letters[letter] > maxNumber) {
+      maximumChar = letter;
+        maxNumber = letters[letter];
+    }
+    return letters;
+  }, []);
+  return maximumChar;
+}
+
+console.log(maxChar('google'));
+
+// this solution will at least return 'a' instead of 'b', but still doesn't 
+// return both letters if quantity is equal.
