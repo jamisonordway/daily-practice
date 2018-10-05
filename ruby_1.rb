@@ -1,12 +1,11 @@
 # Write a function that will loop through a list of integers and 
 # print the index of each element after a 3 second delay.
 class Index
-  attr_reader :given
 
-  def self.print_stuff(integers)
-    integers.each do |integer|
+  def self.print_stuff(array)
+    array.each_with_index do |array, index|
       sleep(3)
-      puts 
+      puts "the index of #{array} is #{index}"
     end
   end
 
