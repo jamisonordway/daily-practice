@@ -1,16 +1,16 @@
 function changeToInt(str) {
   if(str == null) return -1;
-  let num = changeToInt(str.charAt(0));
+  let num = charToInt(str.charAt(0));
   let pre, curr;
 
-  for(var i = 1; i < str.lenght; i++) {
-    curr = changeToInt(str.charAt(i));
-    pre = changeToInt(str.charAt(i - 1));
+  for(var i = 1; i < str.length; i++) {
+    curr = charToInt(str.charAt(i));
+    pre = charToInt(str.charAt(i - 1));
       if (curr <= pre) {
         num += curr;
       } else {
         let difference = curr - pre
-        num = num + diff - pre
+        num = num + difference - pre
       }
   }
   return num;
