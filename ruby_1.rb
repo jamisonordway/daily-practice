@@ -11,5 +11,4 @@ class Index
 
   given = [1, 2, 3, 5, 23]
   print_stuff(given)
-
 end
