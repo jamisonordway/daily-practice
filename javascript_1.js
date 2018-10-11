@@ -1,9 +1,5 @@
 // Write a function that will loop through a list of integers and 
 // print the index of each element after a 3 second delay.
-
-
-
-
 const arr = [1, 4, 2, 3, 6];
 for (var i = 0; i < arr.length; i++) {
   setTimeout(function(local_i) {
