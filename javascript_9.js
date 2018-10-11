@@ -8,6 +8,7 @@
 // // => true
 // bracket('{[)][]}');
 // // => false
+// test comment
 
 function isValid(str) {
   if (str.length <= 1)
