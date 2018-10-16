@@ -5,6 +5,10 @@ class Flip
     @input = input_array
   end
 
+  def valid?
+    
+  end
+
   def flip_part(start_position, end_position)
     while start_position != end_position && start_position + 1 != end_position
       @input[start_position], @input[end_position] = @input[end_position], @input[start_position]
@@ -14,7 +18,8 @@ class Flip
     @input
   end
 
-#works for any positive integer in params.
+# works for any positive integer in params.
+# needs to check start_position and end_position for validity.
 end
 
 flip = Flip.new([1,2,3,4,5,6,7,8,9,10])
